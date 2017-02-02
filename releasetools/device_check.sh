@@ -21,14 +21,14 @@ NFC_MODEL="C8817D C8817E G620S-L01"
 
 RESULT=$(echo $NFC_MODEL | grep "$PRODUCT_MODEL")
 
-if [[ "$RESULT" = "" ]]
-then
-    # Remove NFC
-    rm -rf /system/app/QNfc
-    rm -rf /system/priv-app/Tag
-    rm -rf /system/lib/*nfc*
-    rm -rf /system/etc/*nfc*
-    rm -rf /system/etc/permissions/*nfc*
-    rm -rf /system/framework/*nfc*
-    rm -rf /system/vendor/lib/*nfc*
-fi
+#if [[ "$RESULT" = "" ]]
+#then
+#    # Remove NFC
+#    rm -rf /system/app/QNfc
+#    rm -rf /system/priv-app/Tag
+#    rm -rf /system/lib/*nfc*
+#    rm -rf /system/etc/*nfc*
+#    rm -rf /system/etc/permissions/*nfc*
+#    rm -rf /system/framework/*nfc*
+#    rm -rf /system/vendor/lib/*nfc*
+#fi
